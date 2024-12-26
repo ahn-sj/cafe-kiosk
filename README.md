@@ -16,31 +16,33 @@ It focuses on key DDD building blocks, including:
 
 - Order (Aggregate Root)
   - OrderItem
-  - Customer
-  - Payment
-  - Staff
+  - OrderOptionGroup
+  - OrderOption
 
-### Product
+### Shop
 
-- Product (Aggregate Root)
-  - ProductOption
-  - ProductOptionGroup
-  - ProductCategory
+- Shop (Aggregate Root)
 
-### Payment
+### Menu
 
-- Payment (Aggregate Root)
-  - Transaction
-  - PaymentMethod
-  - Refund
+- Menu (Aggregate Root)
+  - MenuOption
+  - MenuOptionGroup
+  - MenuCategory
 
-### Promotion
+### Machine
 
-- Promotion (Aggregate Root)
-  - DiscountPolicy
+- Machine (Aggregate Root)
+  - Manufacturer
 
-### Kiosk
+### Settlement
 
-- Kiosk (Aggregate Root)
-  - KioskLocation
-  - KioskStatus
+- Settlement (Aggregate Root)
+
+### Receipt
+
+- Receipt (Aggregate Root)
+
+### Staff
+
+- Staff (Aggregate Root)
