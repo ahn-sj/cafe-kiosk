@@ -8,30 +8,41 @@
 - 값 객체(Value Object)
 - 리포지토리(Repository)
 
+## 도메인 설계
+
+https://blog-tech.tadatada.com/2022-10-07-ddd-settlement
+
 ## 유스케이스
 
-[/ > docs > usecases.md](https://github.com/ahn-sj/cafe-kiosk/blob/main/docs/usecase.md)
+```
+/ > docs > usecase > real-world-usecase.md
+```
+
 
 ## 도메인 모델
 - 주문 (Order)
   - 주문 (Aggregate Root)
-  - 주문 항목(OrderItem)
-  - 주문 옵션 그룹(OrderOptionGroup)
-  - 주문 옵션(OrderOption)
+    - 주문 항목(OrderItem)
+    - 주문 옵션 그룹(OrderOptionGroup)
+    - 주문 옵션(OrderOption)
+    - 주문 할인(Discount)
+    - 적립 포인트(Reward)
 - 매장 (Shop)
   - 매장 (Aggregate Root)
+    - 영업 시간(OperatingHours)
 - 메뉴 (Menu)
   - 메뉴 (Aggregate Root)
-  - 메뉴 옵션(MenuOption)
-  - 메뉴 옵션 그룹(MenuOptionGroup)
-  - 메뉴 카테고리(MenuCategory)
-- 기기 (Machine)
-  - 기기 (Aggregate Root)
-  - 제조사(Manufacturer)
+    - 메뉴 옵션(MenuOption)
+    - 메뉴 옵션 그룹(MenuOptionGroup)
+    - 메뉴 카테고리(MenuCategory)
+- 결제 (Payment)
+  - 결제 (Aggregate Root)
+    - 결제 수단(PaymentMethod)
+    - 결제 내역(Transaction)
+- 키오스크 (Kiosk)
+  - 키오스크 (Aggregate Root)
+    - 제조사(Manufacturer)
 - 정산 (Settlement)
   - 정산 (Aggregate Root)
-- 영수증 (Receipt)
-  - 영수증 (Aggregate Root)
 - 직원 (Staff)
   - 직원 (Aggregate Root)
-
