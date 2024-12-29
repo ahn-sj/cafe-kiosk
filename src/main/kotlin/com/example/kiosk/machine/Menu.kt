@@ -15,6 +15,4 @@ class Menu protected constructor(
     @Column(name = "menu_name", nullable = false)
     var name: String = name
         protected set
-
-
 }
