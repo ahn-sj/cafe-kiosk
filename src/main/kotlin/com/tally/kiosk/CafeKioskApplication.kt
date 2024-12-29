@@ -1,4 +1,4 @@
-package com.example.kiosk
+package com.tally.kiosk
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
