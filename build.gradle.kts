@@ -6,7 +6,7 @@ plugins {
 	id("org.jetbrains.kotlin.jvm") version "1.9.25"
 	id("org.jetbrains.kotlin.plugin.spring") version "1.9.25"
 	id("org.jetbrains.kotlin.plugin.jpa") version "1.9.25"
-	id("org.jetbrains.kotlin.kapt") version "1.9.21"
+	id("org.jetbrains.kotlin.kapt") version "1.9.25"
 }
 
 group = "com.cafe"
@@ -31,6 +31,8 @@ dependencies {
 
 	// kotlin
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+
+	// logging
 	implementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.2")
 
 	// db
